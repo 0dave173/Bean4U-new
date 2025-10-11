@@ -143,7 +143,7 @@ font-family: 'Courier New';
 
 .buy-coffee-btn::before{
   content:"☕";
-  font-size:1.1rem;
+  font-size:1.5rem;
   transform:translateY(1px);
 }
 
@@ -207,7 +207,4 @@ font-family: 'Courier New';
   .buy-coffee-btn{transition:none}
   .buy-coffee-btn::after{animation:none; opacity:.5}
 
-.buy-coffee-btn::before{
-  content:none; /* remove the extra coffee icon */
-}
 }
