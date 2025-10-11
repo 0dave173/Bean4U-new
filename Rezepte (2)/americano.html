@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Americano Recipe</title>
+  <link rel="stylesheet" href="single-recipe.css" />
+</head>
+<body>
+  <div class="bg-art"></div>
+
+  <div class="container glass single-recipe">
+    <h1>Americano</h1>
+    
+    <div class="recipe-content">
+      <img src="../imgs/Rezepteimgs/IMG_0022.WEBP" alt="Americano" class="recipe-image" />
+      <div class="recipe-details">
+        <h2>Ingredients</h2>
+        <ul class="ingredients">
+          <li>1 shot espresso (30ml)</li>
+          <li>150-200ml hot water</li>
+        </ul>
+        <h2>Preparation</h2>
+        <ol class="instructions">
+          <li>Brew a single shot of espresso</li>
+          <li>Heat water to 90-96°C</li>
+          <li>Pour hot water over the espresso</li>
+          <li>Stir gently before serving</li>
+          <li>Here is a youtube short quickly explaining it:</li>
+          <li><a href="https://youtube.com/shorts/6uBQiAdqo0U?si=YgBaeJ27nbS_lfjj$0">short Explaination</a>
+          </li>
+        </ol>
+        <h5> Video from @brewinghabits
+            <a href="https://youtube.com/@brewinghabits?si=7hoJB4zvBqyFP7hP$0"> Channel</a>
+        </h5>
+      </div>
+    </div>
+
+    <button id="backBtn" class="glass btn-back">← Back to All Recipes</button>
+  </div>
+
+  <script>
+    document.getElementById('backBtn').addEventListener('click', () => {
+      window.location.href = 'Rezepte2.html';
+    });
+  </script>
+</body>
+</html>

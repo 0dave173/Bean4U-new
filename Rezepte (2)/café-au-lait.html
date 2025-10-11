@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Café au Lait Recipe</title>
+  <link rel="stylesheet" href="single-recipe.css" />
+</head>
+<body>
+  <div class="bg-art"></div>
+
+<div class="container glass single-recipe">
+  <h1>Café au Lait</h1>
+
+  <div class="recipe-content">
+    <img src="../imgs/Rezepteimgs/IMG_0044.JPG" alt="Café au Lait" class="recipe-image" />
+    <div class="recipe-details">
+      <h2>Ingredients</h2>
+      <ul class="ingredients">
+        <li>30 ml espresso (or 2 shots)</li>
+        <li>¼ cup boiling water</li>
+        <li>¼ cup steamed milk</li>
+      </ul>
+
+      <h2>Preparation</h2>
+      <ol class="instructions">
+        <li>Pour espresso into a preheated cup.</li>
+        <li>Add boiling water to reach half‑cup total.</li>
+        <li>Steam milk to 65–70 °C.</li>
+        <li>Gently pour milk over the espresso + water.</li>
+        <li>Stir lightly, then serve hot.</li>
+        <li>Video guide: <a href="https://youtu.be/aaaa">Cafe au Lait prep</a>.</li>
+      </ol>
+
+      <h5>Video from @frappetech <a href="https://youtube.com/@frappetech">Channel</a></h5>
+    </div>
+  </div>
+  <button id="backBtn" class="glass btn-back">← Back to All Recipes</button>
+  <script>
+    document.getElementById('backBtn').addEventListener('click', () => {
+      window.location.href = 'Rezepte2.html';
+    });
+  </script>
+</div>

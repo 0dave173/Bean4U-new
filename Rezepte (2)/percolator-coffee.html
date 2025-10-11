@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Percolator Coffee Recipe</title>
+  <link rel="stylesheet" href="single-recipe.css" />
+</head>
+<body>
+  <div class="bg-art"></div>
+
+<div class="container glass single-recipe">
+  <h1>Percolator Coffee</h1>
+
+  <div class="recipe-content">
+    <img src="../imgs/Rezepteimgs/IMG_0048.JPG" alt="Percolator Coffee" class="recipe-image" />
+    <div class="recipe-details">
+      <h2>Ingredients</h2>
+      <ul class="ingredients">
+        <li>1 cup coarse coffee grounds</li>
+        <li>4 cups water</li>
+        <li>Metal percolator</li>
+      </ul>
+
+      <h2>Preparation</h2>
+      <ol class="instructions">
+        <li>Place grounds in percolator basket.</li>
+        <li>Fill with water up to the top‑ring.</li>
+        <li>Heat on stove or induction until water starts to bubble.</li>
+        <li>Let it percolate multiple cycles (cycle ≈ 30 s).</li>
+        <li>When color darkens to a deep brown, remove from heat.</li>
+        <li>Serve immediately; add milk or sugar if desired.</li>
+        <li>See the percolator demo <a href="https://youtu.be/eeee">here</a>.</li>
+      </ol>
+
+      <h5>Video from @oldschoolbrew <a href="https://youtube.com/@oldschoolbrew">Channel</a></h5>
+    </div>
+  </div>
+  <button id="backBtn" class="glass btn-back">← Back to All Recipes</button>
+  <script>
+    document.getElementById('backBtn').addEventListener('click', () => {
+      window.location.href = 'Rezepte2.html';
+    });
+  </script>
+</div>

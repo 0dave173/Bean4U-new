@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mazagran Recipe</title>
+  <link rel="stylesheet" href="single-recipe.css" />
+</head>
+<body>
+  <div class="bg-art"></div>
+
+<div class="container glass single-recipe">
+  <h1>Mazagran</h1>
+
+  <div class="recipe-content">
+    <img src="../imgs/Rezepteimgs/IMG_0042.WEBP" alt="Mazagran" class="recipe-image" />
+    <div class="recipe-details">
+      <h2>Ingredients</h2>
+      <ul class="ingredients">
+        <li>30 ml espresso</li>
+        <li>2 Tbsp sugar</li>
+        <li>½ tsp fresh lemon zest</li>
+        <li>Ice cube (large)</li>
+      </ul>
+
+      <h2>Preparation</h2>
+      <ol class="instructions">
+        <li>Blend espresso, sugar, and lemon zest until sugar dissolves.</li>
+        <li>Pour into a glass and add the large ice cube.</li>
+        <li>Stir once, taste, and add a splash of cold water if needed.</li>
+        <li>Enjoy the sharp, citrusy finish.</li>
+        <li>For a quick demo: <a href="https://youtu.be/yyyy">Mazagran tutorial</a></li>
+      </ol>
+
+      <h5>Video from @mazagranmasters <a href="https://youtube.com/@mazagranmasters">Channel</a></h5>
+    </div>
+  </div>
+  <button id="backBtn" class="glass btn-back">← Back to All Recipes</button>
+  <script>
+    document.getElementById('backBtn').addEventListener('click', () => {
+      window.location.href = 'Rezepte2.html';
+    });
+  </script>
+</div>

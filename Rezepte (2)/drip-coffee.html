@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Drip Coffee Recipe</title>
+  <link rel="stylesheet" href="single-recipe.css" />
+</head>
+<body>
+  <div class="bg-art"></div>
+
+<div class="container glass single-recipe">
+  <h1>Drip Coffee</h1>
+
+  <div class="recipe-content">
+    <img src="../imgs/Rezepteimgs/IMG_0047.WEBP" alt="Drip Coffee" class="recipe-image" />
+    <div class="recipe-details">
+      <h2>Ingredients</h2>
+      <ul class="ingredients">
+        <li>1 cup coffee grounds (medium‑fine)</li>
+        <li>4 cups hot water (about 93 °C)</li>
+        <li>Metal or paper filter</li>
+      </ul>
+
+      <h2>Preparation</h2>
+      <ol class="instructions">
+        <li>Set filter in brewer and pre‑warm with hot water.</li>
+        <li>Place grounds in filter.</li>
+        <li>Slowly pour hot water over grounds, giving the filter every 30 s.</li>
+        <li>Let water dribble through to the carafe.</li>
+        <li>Serve hot; add milk or sweetener if desired.</li>
+        <li>Pro tip video <a href="https://youtu.be/dddd">Drip Brewing Explained</a>.</li>
+      </ol>
+
+      <h5>Video from @dripmaster <a href="https://youtube.com/@dripmaster">Channel</a></h5>
+    </div>
+  </div>
+  <button id="backBtn" class="glass btn-back">← Back to All Recipes</button>
+  <script>
+    document.getElementById('backBtn').addEventListener('click', () => {
+      window.location.href = 'Rezepte2.html';
+    });
+  </script>
+</div>

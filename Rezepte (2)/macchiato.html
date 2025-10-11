@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Macchiato Recipe</title>
+  <link rel="stylesheet" href="single-recipe.css" />
+</head>
+<body>
+  <div class="bg-art"></div>
+
+  <div class="container glass single-recipe">
+    <h1>Macchiato</h1>
+    
+    <div class="recipe-content">
+      <img src="../imgs/Rezepteimgs/IMG_0026.WEBP" alt="Macchiato" class="recipe-image" />
+      <div class="recipe-details">
+        <h2>Ingredients</h2>
+        <ul class="ingredients">
+          <li>1 shot espresso (30ml)</li>
+          <li>1-2 tsp steamed milk foam</li>
+        </ul>
+        <h2>Preparation</h2>
+        <ol class="instructions">
+          <li>Brew espresso into a small cup</li>
+          <li>Steam a small amount of milk</li>
+          <li>"Stain" the espresso with a spoon of foam</li>
+          <li>Serve immediately</li>
+          <li>Here is a youtube short quickly explaining it:</li>
+          <li><a href="https://youtube.com/shorts/exp7-HCP-sU?si=NwfdqkoZRXKftRSG$0">short Explaination</a>
+          </li>
+        </ol>
+        <h5> Video from @tannercolsoncoffee
+            <a href="https://youtube.com/@tannercolsoncoffee?si=Tpbn5mOfZfeaIKdw$0"> Channel</a>
+        </h5>
+      </div>
+    </div>
+
+    <button id="backBtn" class="glass btn-back">← Back to All Recipes</button>
+  </div>
+
+  <script>
+    document.getElementById('backBtn').addEventListener('click', () => {
+      window.location.href = 'Rezepte2.html';
+    });
+  </script>
+</body>
+</html>

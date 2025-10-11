@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ristretto Recipe</title>
+  <link rel="stylesheet" href="single-recipe.css" />
+</head>
+<body>
+  <div class="bg-art"></div>
+
+  <div class="container glass single-recipe">
+    <h1>Ristretto</h1>
+    
+    <div class="recipe-content">
+      <img src="../imgs/Rezepteimgs/IMG_0028.JPG" alt="Ristretto" class="recipe-image" />
+      <div class="recipe-details">
+        <h2>Ingredients</h2>
+        <ul class="ingredients">
+          <li>18-20g finely ground coffee</li>
+          <li>15-20ml water</li>
+        </ul>
+        <h2>Preparation</h2>
+        <ol class="instructions">
+          <li>Grind coffee slightly finer than espresso</li>
+          <li>Tamp firmly (30lbs pressure)</li>
+          <li>Brew for 15-20 seconds only</li>
+          <li>Stop at first signs of blonding</li>
+          <li>Here is a youtube short quickly showing it:</li>
+          <li><a href="https://youtube.com/shorts/HHfy6IRu6JE?si=u_x65ghAzbC0PmHY$0">short Video</a>
+          </li>
+        </ol>
+        <h5> Video from @HoonsCoffee
+            <a href="https://youtube.com/@hoonscoffee?si=Add_JaZX0iTm23uf$0"> Channel</a>
+        </h5>
+      </div>
+    </div>
+
+    <button id="backBtn" class="glass btn-back">← Back to All Recipes</button>
+  </div>
+
+  <script>
+    document.getElementById('backBtn').addEventListener('click', () => {
+      window.location.href = 'Rezepte2.html';
+    });
+  </script>
+</body>
+</html>

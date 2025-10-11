@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cortado Recipe</title>
+  <link rel="stylesheet" href="single-recipe.css" />
+</head>
+<body>
+  <div class="bg-art"></div>
+
+  <div class="container glass single-recipe">
+    <h1>Cortado</h1>
+    
+    <div class="recipe-content">
+      <img src="../imgs/Rezepteimgs/IMG_0030.JPG" alt="Cortado" class="recipe-image" />
+      <div class="recipe-details">
+        <h2>Ingredients</h2>
+        <ul class="ingredients">
+          <li>1 shot espresso (30ml)</li>
+          <li>30ml warm milk</li>
+        </ul>
+        <h2>Preparation</h2>
+        <ol class="instructions">
+          <li>Brew espresso into small glass</li>
+          <li>Heat milk to 60°C (no foam)</li>
+          <li>Pour equal parts milk to espresso</li>
+          <li>Serve in 60-80ml glass</li>
+          <li>Here is a youtube short quickly explaining it:</li>
+          <li><a href="https://youtube.com/shorts/zHgqcS0HK3A?si=HYHoP28VFbjw_cdC$0">short Explaination</a>
+          </li>
+        </ol>
+        <h5> Video from @Ryantagcoffee
+            <a href="https://youtube.com/@ryantagcoffee?si=6gVMDrpwGDU1gAJQ$0"> Channel</a>
+        </h5>
+      </div>
+    </div>
+
+    <button id="backBtn" class="glass btn-back">← Back to All Recipes</button>
+  </div>
+
+  <script>
+    document.getElementById('backBtn').addEventListener('click', () => {
+      window.location.href = 'Rezepte2.html';
+    });
+  </script>
+</body>
+</html>

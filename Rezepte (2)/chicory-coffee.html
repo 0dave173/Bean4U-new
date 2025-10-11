@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chicory Recipe</title>
+  <link rel="stylesheet" href="single-recipe.css" />
+</head>
+<body>
+  <div class="bg-art"></div>
+
+<div class="container glass single-recipe">
+  <h1>Chicory Coffee</h1>
+
+  <div class="recipe-content">
+    <img src="../imgs/Rezepteimgs/IMG_0046.JPG" alt="Chicory Coffee" class="recipe-image" />
+    <div class="recipe-details">
+      <h2>Ingredients</h2>
+      <ul class="ingredients">
+        <li>1 cup brewed black coffee</li>
+        <li>¼ cup chicory root (roasted & ground)</li>
+        <li>1–2 Tbsp sugar (optional)</li>
+      </ul>
+
+      <h2>Preparation</h2>
+      <ol class="instructions">
+        <li>Use a French press or drip basket with chicory coarsely ground.</li>
+        <li>Brew at 90–95 °C for 4–5 min.</li>
+        <li>Strain normally, sweeten if needed.</li>
+        <li>Enjoy the nutty, slightly smoky flavor.</li>
+        <li>Quick tutorial: <a href="https://youtu.be/cccc">Chicory Brew</a>.</li>
+      </ol>
+
+      <h5>Video from @roastedroots <a href="https://youtube.com/@roastedroots">Channel</a></h5>
+    </div>
+  </div>
+  <button id="backBtn" class="glass btn-back">← Back to All Recipes</button>
+  <script>
+    document.getElementById('backBtn').addEventListener('click', () => {
+      window.location.href = 'Rezepte2.html';
+    });
+  </script>
+</div>

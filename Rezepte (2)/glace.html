@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Glace Recipe</title>
+  <link rel="stylesheet" href="single-recipe.css" />
+</head>
+<body>
+  <div class="bg-art"></div>
+
+<div class="container glass single-recipe">
+  <h1>Glace</h1>
+
+  <div class="recipe-content">
+    <img src="../imgs/Rezepteimgs/IMG_0050.AVIF" alt="Glace" class="recipe-image" />
+    <div class="recipe-details">
+      <h2>Ingredients</h2>
+      <ul class="ingredients">
+        <li>1 cup brewed coffee (cold or room‑temp)</li>
+        <li>¼–½ cup ice</li>
+        <li>1 Tbsp sugar or simple syrup</li>
+        <li>Milk or cream to taste</li>
+      </ul>
+
+      <h2>Preparation</h2>
+      <ol class="instructions">
+        <li>Place brewed coffee, ice, and sweetener in a shaker or blender.</li>
+        <li>Shake/blend until frothy and cold.</li>
+        <li>Pour into a glass, top with a splash of milk or cream.</li>
+        <li>Serve immediately for a refreshing iced coffee.</li>
+        <li>Quick demo <a href="https://youtu.be/gggg">Glace tutorial</a>.</li>
+      </ol>
+
+      <h5>Video from @icedcreambar <a href="https://youtube.com/@icedcreambar">Channel</a></h5>
+    </div>
+  </div>
+  <button id="backBtn" class="glass btn-back">← Back to All Recipes</button>
+  <script>
+    document.getElementById('backBtn').addEventListener('click', () => {
+      window.location.href = 'Rezepte2.html';
+    });
+  </script>
+</div>

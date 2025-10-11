@@ -1,0 +1,128 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(135deg, #969696, #b48d68);
+    color: #3a3a3a;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    position: relative;
+  }
+  
+  /* Glassmorphism container */
+  .container.glass {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 30px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    max-width: 900px;
+    width: 100%;
+  }
+  
+  /* Title */
+  .container h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  
+  /* Layout */
+  .recipe-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  /* Image styling */
+  .recipe-image {
+    flex: 1 1 300px;
+    max-width: 350px;
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Recipe details */
+  .recipe-details {
+    flex: 2 1 400px;
+  }
+  
+  .recipe-details h2 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: #fddc8d;
+  }
+  
+  .recipe-details ul,
+  .recipe-details ol {
+    margin: 10px 0 20px 20px;
+    line-height: 1.6;
+  }
+  
+  .recipe-details a {
+    color: #ffd369;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .recipe-details a:hover {
+    color: #ffb347;
+  }
+  
+  /* Attribution */
+  .recipe-details h5 {
+    margin-top: 10px;
+    font-weight: normal;
+    font-size: 0.95rem;
+    color: #cccccc;
+  }
+  
+  /* Button */
+  .btn-back {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .btn-back:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .recipe-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .recipe-image {
+      max-width: 100%;
+    }
+  
+    .recipe-details {
+      width: 100%;
+    }
+  
+    .container h1 {
+      font-size: 2rem;
+    }
+  }

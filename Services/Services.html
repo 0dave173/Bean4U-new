@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>bean4U – Services</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  /* ---------------------------------- */
+  /* 1️⃣  Base reset & typography */
+  /* ---------------------------------- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+  color: #fff;
+  background: linear-gradient(135deg, #2a2a2a, #1c1c1c);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: #b5ffe1;
+  text-decoration: none;
+}
+
+/* ---------------------- */
+/* Layout & Components */
+/* ---------------------- */
+
+header {
+  background: rgba(20, 20, 20, 0.35);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  color: #eee;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.nav {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #d88448;
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  background: url("../imgs/mcw2 - Kopie.png") center/cover no-repeat;
+  color: #f0f0f0;
+  padding: 6rem 1rem;
+  text-align: center;
+  max-width: 1200px;
+  margin: 2rem auto;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+
+/* Glass overlay */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.08);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
+.hero * {
+  position: relative;
+  z-index: 1; /* keep text above glass */
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: rgba(255, 255, 255, 0.155);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  color: #ffffff80;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background: rgba(255, 255, 255, 0.183);
+  color: #11111145;
+}
+
+/* Sections */
+section {
+  padding: 4rem 1rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.08);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.068);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.237);
+}
+
+.card img {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.card h3 {
+  font-size: 1.45rem;
+  padding: 1rem;
+}
+
+.card p {
+  padding: 0 1rem 1rem;
+}
+
+.card a {
+  display: inline-block;
+  margin: 0 1rem 1rem;
+  color: #f5b857;
+  font-weight: 600;
+}
+
+/* Modal (Quiz) */
+.modal {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, .6);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .3s;
+}
+
+.modal.open {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal-content {
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  border-radius: 16px;
+  max-width: 530px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-header h2 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.close {
+  cursor: pointer;
+  font-size: 1.75rem;
+  color: #fff;
+}
+
+.quiz-question {
+  margin-bottom: 1.25rem;
+}
+
+.quiz-question p {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+#quizResult {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: rgba(181, 255, 225, 0.15);
+  border-left: 4px solid #28a745;
+  color: #edad5e;
+  border-radius: 8px;
+}
+
+#quizResult h4 {
+  margin-bottom: .5rem;
+}
+
+/* Footer */
+footer {
+  background: rgba(20, 20, 20, 0.35);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  color: #bbb;
+  padding: 2rem 1rem;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+footer a {
+  color: #cf8c28;
+  margin: 0 .5rem;
+  transition: opacity 0.3s;
+}
+
+footer a:hover {
+  opacity: 0.7;
+}
+
+/* Responsive */
+@media (min-width: 600px) {
+  .hero {
+    padding: 8rem 1rem;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<!-- ======= HEADER ======= -->
+<header>
+  <nav class="nav">
+    <div class="logo">bean4U</div>
+    <div class="nav-links">
+      <a href="#discover">Discover</a>
+      <a href="#subscribe">Subscribe</a>
+      <a href="#tastings">Tastings</a>
+      <a href="#marketplace">Marketplace</a>
+      <a href="#consulting">Consulting</a>
+      <a href="../Contact/Contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<!-- ======= HERO ======= -->
+<section class="hero">
+  <h1>your coffee your choice</h1>
+  <p>Find the perfect brew that matches your taste, lifestyle and budget.</p>
+  <button class="btn openQuiz">Take the Quick Quiz</button>
+</section>
+
+<!-- ======= SERVICES ======= -->
+<section id="discover">
+  <h2>Tailored Coffee Discovery</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="../imgs/product imgs/blog-learning-coffee-tasting-grinds-1024x683.webp " alt="Taste Quiz">
+      <h3>Take the Quiz</h3>
+      <p>Answer a few quick questions and get a coffee recommendation that’s just for you.</p>
+      <a href="#" class="btn openQuiz">Start Now</a>
+    </div>
+    <div class="card">
+      <img src="../imgs/product imgs/TYPES-OF-COFFEE-pdf-15-2048.webp" alt="Coffee Guide">
+      <h3>Personal PDF Guide</h3>
+      <p>Your personalized report includes grind size, brew method and storage tips.</p>
+      <a href="#" class="btn">Download</a>
+    </div>
+  </div>
+</section>
+
+<!-- (rest of your service sections unchanged for brevity) -->
+
+<!-- ======= QUIZ MODAL ======= -->
+<div class="modal" id="quizModal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2>Coffee Match Quiz</h2>
+      <span class="close" id="closeQuiz">&times;</span>
+    </div>
+    <form id="quizForm">
+      <div class="quiz-question">
+        <p>1️⃣ How do you prefer your coffee?</p>
+        <label><input type="radio" name="q1" value="light" required> Light / Fresh</label><br>
+        <label><input type="radio" name="q1" value="medium"> Medium / Balanced</label><br>
+        <label><input type="radio" name="q1" value="dark"> Dark / Rich</label>
+      </div>
+      <div class="quiz-question">
+        <p>2️⃣ Are you a fan of flavor complexity?</p>
+        <label><input type="radio" name="q2" value="simple" required> Simple / Clean</label><br>
+        <label><input type="radio" name="q2" value="complex"> Complex / Layered</label>
+      </div>
+      <div class="quiz-question">
+        <p>3️⃣ What’s your preferred brewing method?</p>
+        <label><input type="radio" name="q3" value="drip" required> Drip / Pour-Over</label><br>
+        <label><input type="radio" name="q3" value="espresso"> Espresso / Shot</label><br>
+        <label><input type="radio" name="q3" value="coldbrew"> Cold Brew</label>
+      </div>
+      <div class="quiz-question">
+        <p>4️⃣ Do you like a bit of acidity?</p>
+        <label><input type="radio" name="q4" value="yes" required> Yes!</label><br>
+        <label><input type="radio" name="q4" value="no"> No, keep it smooth</label>
+      </div>
+      <div class="quiz-question">
+        <p>5️⃣ What’s your coffee budget?</p>
+        <label><input type="radio" name="q5" value="budget" required> Budget / Value</label><br>
+        <label><input type="radio" name="q5" value="premium"> Premium / Specialty</label>
+      </div>
+      <button type="submit" class="btn">See Your Match</button>
+    </form>
+
+    <div id="quizResult" style="display:none;">
+      <h4>Your Recommended Bean:</h4>
+      <p id="resultText"></p>
+    </div>
+  </div>
+</div>
+
+<!-- ======= FOOTER ======= -->
+<footer id="contact">
+  <p>Follow us: <a href="https://www.instagram.com/bean4u_">Instagram</a> | <a href="https://x.com/bean4u_">X</a> | <a href="https://facebook.com/share/1A7YbwisHt/?mibextid=wwXlfr">Facebook</a></p>
+  <p>© 2025 bean4U · <a href="#">Privacy | Terms</a></p>
+</footer>
+
+<script>
+  /* ==== Modal toggle ==== */
+  const modal = document.getElementById('quizModal');
+  const openButtons = document.querySelectorAll('.openQuiz');
+  const closeBtn = document.getElementById('closeQuiz');
+
+  openButtons.forEach(btn => {
+    btn.addEventListener('click', e => {
+      e.preventDefault();
+      modal.classList.add('open');
+    });
+  });
+
+  closeBtn.addEventListener('click', () => modal.classList.remove('open'));
+  window.addEventListener('click', e => { if(e.target === modal) modal.classList.remove('open'); });
+  window.addEventListener('keydown', e => { if(e.key === "Escape") modal.classList.remove('open'); });
+
+  /* ==== Quiz logic ==== */
+  const quizForm = document.getElementById('quizForm');
+  const quizResult = document.getElementById('quizResult');
+  const resultText = document.getElementById('resultText');
+
+  quizForm.addEventListener('submit', e => {
+    e.preventDefault();
+    const data = new FormData(quizForm);
+    const answers = {
+      q1: data.get('q1'),
+      q2: data.get('q2'),
+      q3: data.get('q3'),
+      q4: data.get('q4'),
+      q5: data.get('q5')
+    };
+
+    let recommendation = "";
+
+    if(answers.q1 === "light" && answers.q2 === "complex" && answers.q4 === "yes"){
+      recommendation = "Try a fruity Ethiopian Yirgacheffe – bright, floral, with citrus notes.";
+    } else if(answers.q1 === "medium" && answers.q3 === "drip"){
+      recommendation = "Colombian medium roast – balanced, chocolatey, perfect for pour-over.";
+    } else if(answers.q1 === "dark" && answers.q3 === "espresso"){
+      recommendation = "Italian-style dark roast – rich, bold, and perfect for espresso lovers.";
+    } else if(answers.q3 === "coldbrew"){
+      recommendation = "A smooth Brazilian bean – naturally low-acid, ideal for cold brew.";
+    } else if(answers.q5 === "budget"){
+      recommendation = "Go for a value-friendly Central American blend – reliable and affordable.";
+    } else {
+      recommendation = "Explore our premium selection – Kenyan AA or Panama Geisha for complexity.";
+    }
+
+    resultText.textContent = recommendation;
+    quizResult.style.display = "block";
+    quizForm.scrollIntoView({behavior: "smooth"});
+  });
+</script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Americano Recipe</title>
+  <link rel="stylesheet" href="single-recipe.css" />
+</head>
+<body>
+  <div class="bg-art"></div>
+
+  <div class="container glass single-recipe">
+    <h1>Americano</h1>
+    
+    <div class="recipe-content">
+      <img src="../imgs/Rezepteimgs/IMG_0019.JPG" alt="Americano" class="recipe-image" />
+      <div class="recipe-details">
+        <h2>Ingredients</h2>
+        <ul class="ingredients">
+            <li>18-20g finely ground coffee beans</li>
+            <li>30ml water</li>
+          </ul>
+          <h2>Preparation</h2>
+          <ol class="instructions">
+            <li>Grind coffee beans to a fine consistency</li>
+            <li>Tamp the grounds evenly in the portafilter</li>
+            <li>Brew for 25-30 seconds at 9 bar pressure</li>
+            <li>Serve immediately in a preheated cup</li>
+          <li><a href="https://youtube.com/shorts/2eudmJpupyw?si=DFmi66AU6KM4LBPU$0">short Explaination</a>
+          </li>
+        </ol>
+        <h5> Video from @brewinghabits
+            <a href="https://youtube.com/@tannercolsoncoffee?si=ePqB_-r5WyN9T7-k$0"> Channel</a>
+        </h5>
+      </div>
+    </div>
+
+    <button id="backBtn" class="glass btn-back">← Back to All Recipes</button>
+  </div>
+
+  <script>
+    document.getElementById('backBtn').addEventListener('click', () => {
+      window.location.href = 'Rezepte2.html';
+    });
+  </script>
+</body>
+</html>
+

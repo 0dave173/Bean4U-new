@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Frappuccino Recipe</title>
+  <link rel="stylesheet" href="single-recipe.css" />
+</head>
+<body>
+  <div class="bg-art"></div>
+
+<div class="container glass single-recipe">
+  <h1>Frappuccino</h1>
+
+  <div class="recipe-content">
+    <img src="../imgs/Rezepteimgs/IMG_0049.WEBP" alt="Frappuccino" class="recipe-image" />
+    <div class="recipe-details">
+      <h2>Ingredients</h2>
+      <ul class="ingredients">
+        <li>30 ml espresso shot</li>
+        <li>¾ cup milk (whole or plant‑based)</li>
+        <li>1 cup ice (crushed)</li>
+        <li>1–2 Tbsp flavored syrup (vanilla, mocha, etc.)</li>
+      </ul>
+
+      <h2>Preparation</h2>
+      <ol class="instructions">
+        <li>Combine all ingredients in a blender.</li>
+        <li>Blend on high until smooth and thick.</li>
+        <li>Pour into a tall glass, drizzle syrup on top.</li>
+        <li>Optional: add whipped cream and dust with cocoa.</li>
+        <li>Watch a quick Frappuccino blend <a href="https://youtu.be/ffff">YouTube guide</a>.</li>
+      </ol>
+
+      <h5>Video from @frappueats <a href="https://youtube.com/@frappueats">Channel</a></h5>
+    </div>
+  </div>
+  <button id="backBtn" class="glass btn-back">← Back to All Recipes</button>
+  <script>
+    document.getElementById('backBtn').addEventListener('click', () => {
+      window.location.href = 'Rezepte2.html';
+    });
+  </script>
+</div>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flat White Recipe</title>
+  <link rel="stylesheet" href="single-recipe.css" />
+</head>
+<body>
+  <div class="bg-art"></div>
+
+  <div class="container glass single-recipe">
+    <h1>Flat White</h1>
+    
+    <div class="recipe-content">
+      <img src="../imgs/Rezepteimgs/IMG_0025.JPG" alt="Flat White" class="recipe-image" />
+      <div class="recipe-details">
+        <h2>Ingredients</h2>
+        <ul class="ingredients">
+          <li>2 shots espresso (60ml)</li>
+          <li>150ml microfoam milk</li>
+        </ul>
+        <h2>Preparation</h2>
+        <ol class="instructions">
+          <li>Brew double espresso into a 180ml cup</li>
+          <li>Steam milk to create velvety microfoam</li>
+          <li>Pour milk gently from low height</li>
+          <li>Create a thin, flat layer of foam (0.5cm)</li>
+          <li>Here is a youtube short quickly explaining it:</li>
+          <li><a href="https://youtube.com/shorts/fMZF5XE2mJo?si=9_6K0rcEeV0u5NWL$0">short Explaination</a>
+          </li>
+        </ol>
+        <h5> Video from @Goldenbrown.coffee
+            <a href="https://youtube.com/@goldenbrown.coffee?si=ljZ16-PQSTRoa57t$0"> Channel</a>
+        </h5>
+      </div>
+    </div>
+
+    <button id="backBtn" class="glass btn-back">← Back to All Recipes</button>
+  </div>
+
+  <script>
+    document.getElementById('backBtn').addEventListener('click', () => {
+      window.location.href = 'Rezepte2.html';
+    });
+  </script>
+</body>
+</html>

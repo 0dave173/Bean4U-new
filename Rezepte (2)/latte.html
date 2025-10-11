@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Americano Recipe</title>
+  <link rel="stylesheet" href="single-recipe.css" />
+</head>
+<body>
+  <div class="bg-art"></div>
+
+  <div class="container glass single-recipe">
+    <h1>Americano</h1>
+    
+    <div class="recipe-content">
+      <img src="../imgs/Rezepteimgs/IMG_0023.WEBP" alt="Americano" class="recipe-image" />
+      <div class="recipe-details">
+        <h2>Ingredients</h2>
+        <ul class="ingredients">
+            <li>1 shot espresso (30ml)</li>
+            <li>200ml steamed milk</li>
+            <li>1cm milk foam</li>
+          </ul>
+          <h2>Preparation</h2>
+          <ol class="instructions">
+            <li>Brew espresso into a 200ml cup</li>
+            <li>Steam milk to 60-65°C with microfoam</li>
+            <li>Pour milk into espresso from low height</li>
+            <li>Finish with a small foam layer</li>
+          <li><a href="https://youtube.com/shorts/JmLOaDZJfpg?si=s2NhfTih7bmmhWbm$0">short Explaination</a>
+          </li>
+        </ol>
+        <h5> Video from @Ethanrodecoffee
+            <a href="https://youtube.com/@ethanrodecoffee?si=R28HTbmS4g_g1PH0$0"> Channel</a>
+        </h5>
+      </div>
+    </div>
+
+    <button id="backBtn" class="glass btn-back">← Back to All Recipes</button>
+  </div>
+
+  <script>
+    document.getElementById('backBtn').addEventListener('click', () => {
+      window.location.href = 'Rezepte2.html';
+    });
+  </script>
+</body>
+</html>

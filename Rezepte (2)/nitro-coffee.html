@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nitro Coffee Recipe</title>
+  <link rel="stylesheet" href="single-recipe.css" />
+</head>
+<body>
+  <div class="bg-art"></div>
+
+  <div class="container glass single-recipe">
+    <h1>Nitro Coffee</h1>
+    
+    <div class="recipe-content">
+      <img src="../imgs/Rezepteimgs/IMG_0037.JPG" alt="Nitro Coffee" class="recipe-image" />
+      <div class="recipe-details">
+        <h2>Ingredients</h2>
+        <ul class="ingredients">
+          <li>200ml cold brew concentrate</li>
+          <li>Nitrogen gas</li>
+        </ul>
+        <h2>Preparation</h2>
+        <ol class="instructions">
+          <li>Prepare cold brew concentrate</li>
+          <li>Charge in keg with nitrogen at 30-40psi</li>
+          <li>Chill to 2-4°C for 24 hours</li>
+          <li>Serve through nitro tap</li>
+          <li>Pour at 45° angle to create cascade</li>
+          <li>Here is a youtube short quickly explaining it:</li>
+          <li><a href="https://youtube.com/shorts/6uBQiAdqo0U?si=YgBaeJ27nbS_lfjj$0">short Explaination</a>
+          </li>
+        </ol>
+        <h5> Video from @brewinghabits
+            <a href="https://youtube.com/@brewinghabits?si=7hoJB4zvBqyFP7hP$0"> Channel</a>
+        </h5>
+      </div>
+    </div>
+
+    <button id="backBtn" class="glass btn-back">← Back to All Recipes</button>
+  </div>
+
+  <script>
+    document.getElementById('backBtn').addEventListener('click', () => {
+      window.location.href = 'Rezepte2.html';
+    });
+  </script>
+</body>
+</html>
