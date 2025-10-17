@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Café del Tiempo</title>
+  <link rel="stylesheet" href="single-recipe.css" />
+</head>
+<body>
+  <div class="bg-art"></div>
+
+  <div class="container glass single-recipe">
+    <h1>Café del Tiempo</h1>
+    
+    <div class="recipe-content">
+      <img src="https://images.unsplash.com/photo-1721276333028-9c87433e2ebc?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bGVtb24lMjBjb2ZmZWV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=600" alt="Café del Tiempo" class="recipe-image" />
+      <div class="recipe-details">
+        <h2>Ingredients</h2>
+        <ul class="ingredients">
+          <li>1 espresso shot</li>
+          <li>Equal volume of hot water (or hot milk to taste)</li>
+          <li>Optional: lemon peel or sugar</li>
+        </ul>
+        <h2>Preparation</h2>
+        <ol class="instructions">
+          <li>Prepare espresso and dilute with hot water to create a balanced, mellow drink.</li>
+          <li>Adjust with milk or sweetener if desired; traditionally a comforting combination.</li>
+          <li>Serve hot.</li>
+          <li>youtube short quickly explaining it:</li>
+          <li><a href="https://youtube.com/shorts/placeholder24">short Explanation</a></li>
+        </ol>
+        <h5> Video from @latinbrews
+            <a href="https://youtube.com/@latinbrews"> Channel</a>
+        </h5>
+      </div>
+    </div>
+
+    <button id="backBtn" class="glass btn-back">← Back to All Recipes</button>
+  </div>
+
+  <script>
+    document.getElementById('backBtn').addEventListener('click', () => {
+      window.location.href = 'Rezepte2.html';
+    });
+  </script>
+</body>
+</html>

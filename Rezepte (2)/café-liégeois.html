@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Café Liégeois</title>
+  <link rel="stylesheet" href="single-recipe.css" />
+</head>
+<body>
+  <div class="bg-art"></div>
+
+  <div class="container glass single-recipe">
+    <h1>Café Liégeois</h1>
+    
+    <div class="recipe-content">
+      <img src="https://images.unsplash.com/photo-1706158625937-9fe6a9165104?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjZ8fHZhbmlsbGElMjBpY2UlMjBjb2ZmZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=600" alt="Café Liégeois" class="recipe-image" />
+      <div class="recipe-details">
+        <h2>Ingredients</h2>
+        <ul class="ingredients">
+          <li>Strong coffee (cooled)</li>
+          <li>Vanilla ice cream</li>
+          <li>Whipped cream and chocolate shavings</li>
+        </ul>
+        <h2>Preparation</h2>
+        <ol class="instructions">
+          <li>Place 2 scoops of vanilla ice cream in a tall glass.</li>
+          <li>Pour cooled strong coffee over the ice cream.</li>
+          <li>Top with whipped cream and chocolate shavings; serve with a spoon.</li>
+          <li>youtube short quickly explaining it:</li>
+          <li><a href="https://youtube.com/shorts/placeholder25">short Explanation</a></li>
+        </ol>
+        <h5> Video from @frenchdesserts
+            <a href="https://youtube.com/@frenchdesserts"> Channel</a>
+        </h5>
+      </div>
+    </div>
+
+    <button id="backBtn" class="glass btn-back">← Back to All Recipes</button>
+  </div>
+
+  <script>
+    document.getElementById('backBtn').addEventListener('click', () => {
+      window.location.href = 'Rezepte2.html';
+    });
+  </script>
+</body>
+</html>

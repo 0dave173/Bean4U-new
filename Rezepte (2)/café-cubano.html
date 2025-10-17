@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Café Cubano</title>
+  <link rel="stylesheet" href="single-recipe.css" />
+</head>
+<body>
+  <div class="bg-art"></div>
+
+  <div class="container glass single-recipe">
+    <h1>Café Cubano</h1>
+    
+    <div class="recipe-content">
+      <img src="https://images.unsplash.com/photo-1545341122-64b73393fa64?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Q2FmJUMzJUE5JTIwQ3ViYW5vfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=600" alt="Café Cubano" class="recipe-image" />
+      <div class="recipe-details">
+        <h2>Ingredients</h2>
+        <ul class="ingredients">
+          <li>2–3 tbsp finely ground dark roast coffee</li>
+          <li>Cold water for espresso machine or stovetop</li>
+          <li>2 tsp sugar (per 1–2 shots) — adjust to taste</li>
+        </ul>
+        <h2>Preparation</h2>
+        <ol class="instructions">
+          <li>Brew a small strong pot of espresso or moka (2 shots).</li>
+          <li>In a cup, mix the first small splash of espresso with sugar and whisk until foamy (espuma).</li>
+          <li>Pour the rest of the hot espresso over the foam, stir gently and serve.</li>
+          <li>youtube short quickly explaining it:</li>
+          <li><a href="https://youtube.com/shorts/placeholder3">short Explanation</a></li>
+        </ol>
+        <h5> Video from @cubanflavor
+            <a href="https://youtube.com/@cubanflavor"> Channel</a>
+        </h5>
+      </div>
+    </div>
+
+    <button id="backBtn" class="glass btn-back">← Back to All Recipes</button>
+  </div>
+
+  <script>
+    document.getElementById('backBtn').addEventListener('click', () => {
+      window.location.href = 'Rezepte2.html';
+    });
+  </script>
+</body>
+</html>

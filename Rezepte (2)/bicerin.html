@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bicerin</title>
+  <link rel="stylesheet" href="single-recipe.css" />
+</head>
+<body>
+  <div class="bg-art"></div>
+
+  <div class="container glass single-recipe">
+    <h1>Bicerin</h1>
+    
+    <div class="recipe-content">
+      <img src="../imgs/Rezepteimgs/Bicerin.png" alt="Bicerin" class="recipe-image" />
+      <div class="recipe-details">
+        <h2>Ingredients</h2>
+        <ul class="ingredients">
+          <li>1 shot espresso</li>
+          <li>Hot chocolate (thick, about 60–80 ml)</li>
+          <li>Whole milk or cream (optional layer)</li>
+        </ul>
+        <h2>Preparation</h2>
+        <ol class="instructions">
+          <li>In a small glass, layer hot chocolate, then espresso, then a touch of milk or cream.</li>
+          <li>Serve without stirring to appreciate the layers; stir to combine when drinking.</li>
+          <li>youtube short quickly explaining it:</li>
+          <li><a href="https://youtube.com/shorts/placeholder10">short Explanation</a></li>
+        </ol>
+        <h5> Video from @turintraditions
+            <a href="https://youtube.com/@turintraditions"> Channel</a>
+        </h5>
+      </div>
+    </div>
+
+    <button id="backBtn" class="glass btn-back">← Back to All Recipes</button>
+  </div>
+
+  <script>
+    document.getElementById('backBtn').addEventListener('click', () => {
+      window.location.href = 'Rezepte2.html';
+    });
+  </script>
+</body>
+</html>

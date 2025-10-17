@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Café Zorro</title>
+  <link rel="stylesheet" href="single-recipe.css" />
+</head>
+<body>
+  <div class="bg-art"></div>
+
+  <div class="container glass single-recipe">
+    <h1>Café Zorro</h1>
+    
+    <div class="recipe-content">
+      <img src="https://images.unsplash.com/photo-1642316201223-2331fd52efa9?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fENhZiVDMyVBOSUyMFpvcnJvfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=600" alt="Café Zorro" class="recipe-image" />
+      <div class="recipe-details">
+        <h2>Ingredients</h2>
+        <ul class="ingredients">
+          <li>2 shots espresso</li>
+          <li>Hot water (about 60–80 ml)</li>
+        </ul>
+        <h2>Preparation</h2>
+        <ol class="instructions">
+          <li>Pull two espresso shots into a cup.</li>
+          <li>Add hot water to dilute to the strength of an Americano but with a bolder flavor.</li>
+          <li>Serve straight—often enjoyed without milk.</li>
+          <li>youtube short quickly explaining it:</li>
+          <li><a href="https://youtube.com/shorts/placeholder6">short Explanation</a></li>
+        </ol>
+        <h5> Video from @espressoart
+            <a href="https://youtube.com/@espressoart"> Channel</a>
+        </h5>
+      </div>
+    </div>
+
+    <button id="backBtn" class="glass btn-back">← Back to All Recipes</button>
+  </div>
+
+  <script>
+    document.getElementById('backBtn').addEventListener('click', () => {
+      window.location.href = 'Rezepte2.html';
+    });
+  </script>
+</body>
+</html>

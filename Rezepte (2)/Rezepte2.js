@@ -9,7 +9,7 @@ const coffeeTypes = [
   "Café Zorro", "Espresso Romano", "Bulletproof Coffee", "Café Brûlot", "Bicerin",
   "Café Touba", "Café Corretto", "Palazzo", "Café Shakerato", "Marocchino",
   "Café Rápido y Sucio", "Kopi Tubruk", "Kopi Joss", "Kopi Luwak", "Ca Phe Trung",
-  "Ca Phe Sua Da", "Eiskaffee", "Yuanyang", "Café del Tiempo", "Café Liégeois"
+  "Ca Phe Sua Da", "Yuanyang", "Café del Tiempo", "Café Liégeois"
 ];
 
 const coffeeImages = {
@@ -54,20 +54,19 @@ const coffeeImages = {
   "Café Brûlot": "https://images.unsplash.com/photo-1581243440487-3d9642a6a11c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Q2FmJUMzJUE5JTIwQnIlQzMlQkJsb3R8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=600",
   "Bicerin": "../imgs/Rezepteimgs/Bicerin.png",
   "Café Touba": "https://images.unsplash.com/photo-1640555051787-7d2a30e43863?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Q2FmJUMzJUE5JTIwVG91YmF8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=600",
-  "Café Corretto": "../imgs/Rezepteimgs/IMG_0062.JPG",
-  "Palazzo": "../imgs/Rezepteimgs/IMG_0063.JPG",
-  "Café Shakerato": "../imgs/Rezepteimgs/IMG_0064.JPG",
-  "Marocchino": "../imgs/Rezepteimgs/IMG_0065.JPG",
-  "Café Rápido y Sucio": "../imgs/Rezepteimgs/IMG_0066.JPG",
-  "Kopi Tubruk": "../imgs/Rezepteimgs/IMG_0067.JPG",
-  "Kopi Joss": "../imgs/Rezepteimgs/IMG_0068.JPG",
-  "Kopi Luwak": "../imgs/Rezepteimgs/IMG_0069.JPG",
-  "Ca Phe Trung": "../imgs/Rezepteimgs/IMG_0070.JPG",
-  "Ca Phe Sua Da": "../imgs/Rezepteimgs/IMG_0071.JPG",
-  "Eiskaffee": "../imgs/Rezepteimgs/IMG_0072.JPG",
-  "Yuanyang": "../imgs/Rezepteimgs/IMG_0073.JPG",
-  "Café del Tiempo": "../imgs/Rezepteimgs/IMG_0074.JPG",
-  "Café Liégeois": "../imgs/Rezepteimgs/IMG_0075.JPG"
+  "Café Corretto": "https://images.unsplash.com/photo-1645262458871-ef8d517745ca?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nzh8fENhZiVDMyVBOSUyMGNvcnJldHRvfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=600",
+  "Palazzo": "https://images.unsplash.com/photo-1559496417-e7f25cb247f3?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGNvZmZlZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=600",
+  "Café Shakerato": "https://images.unsplash.com/photo-1717603545604-eaf2d1805ad7?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y29mZmVlJTIwaWNlfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=600",
+  "Marocchino": "https://images.unsplash.com/photo-1667279601589-e5497f751d89?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjA0fHxtYXJyb2NjaW5vJTIwY29mZmVlfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=600",
+  "Café Rápido y Sucio": "https://images.unsplash.com/photo-1688962475803-010f5b756e5a?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjEyfHxtYXJyb2NjaW5vJTIwY29mZmVlfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=600",
+  "Kopi Tubruk": "https://images.unsplash.com/photo-1521302080334-4bebac2763a6?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmxhY2slMjBjb2ZmZWV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=600",
+  "Kopi Joss": "https://images.unsplash.com/photo-1628406639308-2d4aa223c230?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGtvcGklMjBqb3NzfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=600",
+  "Kopi Luwak": "https://images.unsplash.com/photo-1643081263742-556f3c8eed4b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDR8fGtvcGklMjBqb3NzfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=600",
+  "Ca Phe Trung": "https://cdn.pixabay.com/photo/2022/11/07/04/36/vietnamese-hot-honey-eggs-coffee-7575584_1280.jpg",
+  "Ca Phe Sua Da": "https://images.unsplash.com/photo-1584286595398-a59f21d313f5?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTl8fGljZWQlMjBjb2ZmZWV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=600",
+  "Yuanyang": "https://images.unsplash.com/photo-1711370093106-a09b333c0b42?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dGVhJTIwY29mZmVlfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=600",
+  "Café del Tiempo": "https://images.unsplash.com/photo-1721276333028-9c87433e2ebc?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bGVtb24lMjBjb2ZmZWV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=600",
+  "Café Liégeois": "https://images.unsplash.com/photo-1706158625937-9fe6a9165104?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjZ8fHZhbmlsbGElMjBpY2UlMjBjb2ZmZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=600"
 };
 
 const coffeeList = document.getElementById("coffeeList");

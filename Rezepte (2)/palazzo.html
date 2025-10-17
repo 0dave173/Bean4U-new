@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Palazzo</title>
+  <link rel="stylesheet" href="single-recipe.css" />
+</head>
+<body>
+  <div class="bg-art"></div>
+
+  <div class="container glass single-recipe">
+    <h1>Palazzo</h1>
+    
+    <div class="recipe-content">
+      <img src="https://images.unsplash.com/photo-1559496417-e7f25cb247f3?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGNvZmZlZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=600" alt="Palazzo" class="recipe-image" />
+      <div class="recipe-details">
+        <h2>Ingredients</h2>
+        <ul class="ingredients">
+          <li>1 shot espresso</li>
+          <li>Steamed milk (about 60 ml)</li>
+          <li>Thin layer of milk foam</li>
+        </ul>
+        <h2>Preparation</h2>
+        <ol class="instructions">
+          <li>Pull espresso into a cup, add steamed milk and a thin cap of foam.</li>
+          <li>Serve immediately—similar to a small latte.</li>
+          <li>youtube short quickly explaining it:</li>
+          <li><a href="https://youtube.com/shorts/placeholder13">short Explanation</a></li>
+        </ol>
+        <h5> Video from @coffeecraft
+            <a href="https://youtube.com/@coffeecraft"> Channel</a>
+        </h5>
+      </div>
+    </div>
+
+    <button id="backBtn" class="glass btn-back">← Back to All Recipes</button>
+  </div>
+
+  <script>
+    document.getElementById('backBtn').addEventListener('click', () => {
+      window.location.href = 'Rezepte2.html';
+    });
+  </script>
+</body>
+</html>

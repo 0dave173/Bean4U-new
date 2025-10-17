@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Café de Olla</title>
+  <link rel="stylesheet" href="single-recipe.css" />
+</head>
+<body>
+  <div class="bg-art"></div>
+
+  <div class="container glass single-recipe">
+    <h1>Café de Olla</h1>
+    
+    <div class="recipe-content">
+      <img src="https://images.unsplash.com/photo-1716972016624-872990cf2ef7?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fENhZiVDMyVBOSUyMGRlJTIwT2xsYXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=600" alt="Café de Olla" class="recipe-image" />
+      <div class="recipe-details">
+        <h2>Ingredients</h2>
+        <ul class="ingredients">
+          <li>4 cups water</li>
+          <li>4 tbsp coarsely ground coffee</li>
+          <li>1/4 cup piloncillo or brown sugar (adjust)</li>
+          <li>1 cinnamon stick</li>
+          <li>Optional: star anise, orange peel</li>
+        </ul>
+        <h2>Preparation</h2>
+        <ol class="instructions">
+          <li>Bring water, piloncillo, and cinnamon to a simmer in a pot.</li>
+          <li>Add coffee grounds, reduce heat and simmer 3–5 minutes.</li>
+          <li>Remove from heat, let settle 2 minutes, strain into mugs and serve.</li>
+          <li>youtube short quickly explaining it:</li>
+          <li><a href="https://youtube.com/shorts/placeholder4">short Explanation</a></li>
+        </ol>
+        <h5> Video from @mexicancoffee
+            <a href="https://youtube.com/@mexicancoffee"> Channel</a>
+        </h5>
+      </div>
+    </div>
+
+    <button id="backBtn" class="glass btn-back">← Back to All Recipes</button>
+  </div>
+
+  <script>
+    document.getElementById('backBtn').addEventListener('click', () => {
+      window.location.href = 'Rezepte2.html';
+    });
+  </script>
+</body>
+</html>

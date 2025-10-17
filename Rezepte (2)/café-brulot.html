@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Café Brûlot</title>
+  <link rel="stylesheet" href="single-recipe.css" />
+</head>
+<body>
+  <div class="bg-art"></div>
+
+  <div class="container glass single-recipe">
+    <h1>Café Brûlot</h1>
+    
+    <div class="recipe-content">
+      <img src="https://images.unsplash.com/photo-1581243440487-3d9642a6a11c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Q2FmJUMzJUE5JTIwQnIlQzMlQkJsb3R8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=600" alt="Café Brûlot" class="recipe-image" />
+      <div class="recipe-details">
+        <h2>Ingredients</h2>
+        <ul class="ingredients">
+          <li>Strong brewed coffee or espresso (enough for serving)</li>
+          <li>2–3 tbsp brandy or dark rum</li>
+          <li>Peel of 1 orange and 1 lemon</li>
+          <li>2 tbsp sugar</li>
+          <li>Spices: cinnamon stick, cloves</li>
+        </ul>
+        <h2>Preparation</h2>
+        <ol class="instructions">
+          <li>Combine spirits, citrus peels, sugar and spices in a pot and warm gently.</li>
+          <li>Add coffee and light carefully to flambé for a few seconds (optional, be safe).</li>
+          <li>Extinguish flame, strain into cups and serve hot.</li>
+          <li>youtube short quickly explaining it:</li>
+          <li><a href="https://youtube.com/shorts/placeholder9">short Explanation</a></li>
+        </ol>
+        <h5> Video from @neworleansflavor
+            <a href="https://youtube.com/@neworleansflavor"> Channel</a>
+        </h5>
+      </div>
+    </div>
+
+    <button id="backBtn" class="glass btn-back">← Back to All Recipes</button>
+  </div>
+
+  <script>
+    document.getElementById('backBtn').addEventListener('click', () => {
+      window.location.href = 'Rezepte2.html';
+    });
+  </script>
+</body>
+</html>
