@@ -52,7 +52,7 @@ const coffeeImages = {
   "Espresso Romano": "https://images.pexels.com/photos/34315411/pexels-photo-34315411.jpeg",
   "Bulletproof Coffee": "https://images.unsplash.com/photo-1639670651107-06d8c2841a75?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8QnVsbGV0cHJvb2YlMjBDb2ZmZWV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=600",
   "Café Brûlot": "https://images.unsplash.com/photo-1581243440487-3d9642a6a11c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Q2FmJUMzJUE5JTIwQnIlQzMlQkJsb3R8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=600",
-  "Bicerin": "../imgs/Rezepteimgs/IMG_0060.JPG",
+  "Bicerin": "../imgs/Rezepteimgs/Bicerin.png",
   "Café Touba": "https://images.unsplash.com/photo-1640555051787-7d2a30e43863?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Q2FmJUMzJUE5JTIwVG91YmF8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=600",
   "Café Corretto": "../imgs/Rezepteimgs/IMG_0062.JPG",
   "Palazzo": "../imgs/Rezepteimgs/IMG_0063.JPG",
