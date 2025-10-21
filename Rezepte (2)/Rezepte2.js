@@ -13,12 +13,12 @@ const coffeeTypes = [
 ];
 
 const coffeeImages = {
-  "Espresso": "https://images.unsplash.com/photo-1596952954288-16862d37405b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZXNwcmVzc298ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=500",
-  "Americano": "https://images.unsplash.com/photo-1580661869408-55ab23f2ca6e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YW1lcmljYW5vJTIwY29mZmVlfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500",
-  "Latte": "https://images.unsplash.com/photo-1585494156145-1c60a4fe952b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bGF0dGUlMjBjb2ZmZWV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=500",
-  "Cappuccino": "https://images.unsplash.com/photo-1710173472469-9d28e977914c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y2FwcHVjY2lub3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=500",
-  "Flat White": "https://images.pexels.com/photos/30556593/pexels-photo-30556593.jpeg",
-  "Macchiato": "https://images.pexels.com/photos/10996412/pexels-photo-10996412.jpeg",
+  "Espresso": "../imgs/Rezepteimgs/espresso.webp",
+  "Americano": "../imgs/Rezepteimgs/americano.webp",
+  "Latte": "../imgs/Rezepteimgs/latte.webp",
+  "Cappuccino": "../imgs/Rezepteimgs/cappuccino.webp",
+  "Flat White": "../imgs/Rezepteimgs/flat_white.webp",
+  "Macchiato": "../imgs/Rezepteimgs/macchiato.webp",
   "Mocha": "https://images.pexels.com/photos/2299028/pexels-photo-2299028.jpeg",
   "Ristretto": "https://images.unsplash.com/photo-1648524168748-0ff4ac3c79a7?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmlzdHJldHRvJTIwY29mZmVlfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500",
   "Long Black": "https://images.unsplash.com/photo-1551490434-bf8bc9eab4a9?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bG9uZyUyMGJsYWNrJTIwY29mZmVlfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500",
