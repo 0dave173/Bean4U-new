@@ -78,6 +78,7 @@ nav.addEventListener('touchstart',e=>{
   const a=e.target.closest('a');if(a)focusLink(a);
 },{passive:true});
 
+{
 // --- SERVER CODE ---
 const jwt = require('jsonwebtoken');
 
@@ -99,3 +100,4 @@ const token = jwt.sign(
 // --- CLIENT CODE ---
 const token = await getUserToken(); // Get the token from your server
 window.chatbase('identify', { token }); // identify the user with Chatbase
+}
