@@ -21,7 +21,7 @@ const coffeeImages = {
   "Macchiato": "../imgs/Rezepteimgs/macchiato.webp",
   "Mocha": "../imgs/Rezepteimgs/mocha.webp",
   "Ristretto": "../imgs/Rezepteimgs/ristretto.webp",
-  "Long Black": "../imgs/Rezepteimgs/long_black.webp",
+  "Long Black": "../imgs/Rezepteimgs/long-black.webp",
   "Cortado": "../imgs/Rezepteimgs/cortado.webp",
   "Affogato": "../imgs/Rezepteimgs/affogato.webp",
   "Irish Coffee": "../imgs/Rezepteimgs/irish_coffee.webp",
