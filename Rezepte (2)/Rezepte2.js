@@ -19,7 +19,7 @@ const coffeeImages = {
   "Cappuccino": "../imgs/Rezepteimgs/cappuccino.webp",
   "Flat White": "../imgs/Rezepteimgs/flat_white.webp",
   "Macchiato": "../imgs/Rezepteimgs/macchiato.webp",
-  "Mocha": "https://images.pexels.com/photos/2299028/pexels-photo-2299028.jpeg",
+  "Mocha": "../imgs/Rezepteimgs/mocha.webp",
   "Ristretto": "https://images.unsplash.com/photo-1648524168748-0ff4ac3c79a7?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmlzdHJldHRvJTIwY29mZmVlfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500",
   "Long Black": "https://images.unsplash.com/photo-1551490434-bf8bc9eab4a9?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bG9uZyUyMGJsYWNrJTIwY29mZmVlfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500",
   "Cortado": "https://images.unsplash.com/photo-1670217756837-34134e2e9e60?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y29ydGFkbyUyMGNvZmZlZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=500",
