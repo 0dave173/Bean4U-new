@@ -26,7 +26,7 @@ const coffeeImages = {
   "Affogato": "../imgs/Rezepteimgs/affogato.webp",
   "Irish Coffee": "../imgs/Rezepteimgs/irish_coffee.webp",
   "Turkish Coffee": "../imgs/Rezepteimgs/turkish_coffee.webp",
-  "Vienna": "https://images.unsplash.com/photo-1722415561249-f3477d3e4a5b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dmllbm5hJTIwY29mZmVlfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500",
+  "Vienna": "../imgs/Rezepteimgs/vienna.webp",
   "Lungo": "https://images.pexels.com/photos/23938280/pexels-photo-23938280.jpeg",
   "Cold Brew": "https://images.unsplash.com/photo-1610094338066-f1bf3f45dbf7?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y29sZCUyMGJyZXclMjBjb2ZmZWV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=500",
   "Nitro Coffee": "https://images.unsplash.com/photo-1619640998316-b5abb7564ed3?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bml0cm8lMjBjb2ZmZWV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=500",
