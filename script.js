@@ -1,4 +1,8 @@
-/*  Bubble folgt dem Button und übernimmt dessen Akzentfarbe  */
+/* ==========================================================
+   Beans4U Navigation Bubble + Consent Overlay
+   ========================================================== */
+
+/*  Bubble Animation  */
 const nav    = document.querySelector('.menu-container');
 const bubble = document.querySelector('.menu-bubble');
 const links  = [...document.querySelectorAll('.menu-list a')];
@@ -79,14 +83,22 @@ nav.addEventListener('touchstart',e=>{
 },{passive:true});
 
 
-// ------------------------------------------------------------
-// ✅ CONSENT OVERLAY (must agree to Terms & Privacy Policy)
-// ------------------------------------------------------------
-window.addEventListener("load", function() {
-  const hasAgreed = localStorage.getItem("beans4u_terms_agreed");
+/* ==========================================================
+   ✅ Terms & Privacy Consent Overlay
+   ========================================================== */
 
-  if (!hasAgreed) {
-    // Create overlay
+window.addEventListener("DOMContentLoaded", () => {
+  const STORAGE_KEY = "beans4u_terms_agreed";
+  const EXPIRY_DAYS = 365;
+
+  // Check consent status
+  const consentData = JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}");
+  const now = new Date().getTime();
+  const expired =
+    !consentData.timestamp ||
+    (now - consentData.timestamp) > EXPIRY_DAYS * 24 * 60 * 60 * 1000;
+
+  if (!consentData.agreed || expired) {
     const overlay = document.createElement("div");
     overlay.id = "consent-overlay";
     overlay.innerHTML = `
@@ -102,7 +114,7 @@ window.addEventListener("load", function() {
     `;
     document.body.appendChild(overlay);
 
-    // Add styles for overlay
+    // Add styles
     const style = document.createElement("style");
     style.textContent = `
       #consent-overlay {
@@ -139,11 +151,13 @@ window.addEventListener("load", function() {
     `;
     document.head.appendChild(style);
 
-    // Button handler
+    // Handle click
     document.getElementById("agree-btn").addEventListener("click", () => {
-      localStorage.setItem("beans4u_terms_agreed", "true");
+      localStorage.setItem(
+        STORAGE_KEY,
+        JSON.stringify({ agreed: true, timestamp: new Date().getTime() })
+      );
       overlay.remove();
     });
   }
 });
-localStorage.clear();
