@@ -1,4 +1,4 @@
-/*  Bubble folgt dem Button und übernimmt dessen Akzentfarbe */
+/*  Bubble folgt dem Button und übernimmt dessen Akzentfarbe  */
 const nav    = document.querySelector('.menu-container');
 const bubble = document.querySelector('.menu-bubble');
 const links  = [...document.querySelectorAll('.menu-list a')];
@@ -78,26 +78,72 @@ nav.addEventListener('touchstart',e=>{
   const a=e.target.closest('a');if(a)focusLink(a);
 },{passive:true});
 
-{
-// --- SERVER CODE ---
-const jwt = require('jsonwebtoken');
 
-const secret = '69rke65z328mmuw7bjjk3f92afz599ap'; // Your chatbase secret key (should be stored as a secret not in the code)
+// ------------------------------------------------------------
+// ✅ CONSENT OVERLAY (must agree to Terms & Privacy Policy)
+// ------------------------------------------------------------
+window.addEventListener("load", function() {
+  const hasAgreed = localStorage.getItem("beans4u_terms_agreed");
 
-const user = await getSignedInUser(); // Get the current user signed in to your site
+  if (!hasAgreed) {
+    // Create overlay
+    const overlay = document.createElement("div");
+    overlay.id = "consent-overlay";
+    overlay.innerHTML = `
+      <div id="consent-box">
+        <h2>Welcome to Beans4U ☕</h2>
+        <p>
+          Please review and accept our
+          <a href="/terms.html" target="_blank">Terms & Conditions</a> and
+          <a href="/privacy.html" target="_blank">Privacy Policy</a> to continue.
+        </p>
+        <button id="agree-btn">I Agree</button>
+      </div>
+    `;
+    document.body.appendChild(overlay);
 
-const token = jwt.sign(
-    { 
-        user_id: user.id, // Your user's id
-        email: "winklerdavid815@gmail.com", // User's email
-        stripe_accounts: user.stripe_accounts, // User's stripe accounts for stripe integration
-        // ... other custom attributes
-    }, 
-    secret, 
-    { expiresIn: '1h' }
-);
+    // Add styles for overlay
+    const style = document.createElement("style");
+    style.textContent = `
+      #consent-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0,0,0,0.85);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 99999;
+      }
+      #consent-box {
+        background: #fff;
+        color: #333;
+        border-radius: 12px;
+        padding: 30px 40px;
+        max-width: 420px;
+        text-align: center;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        font-family: "Segoe UI", sans-serif;
+        line-height: 1.5;
+      }
+      #consent-box a { color: #6b4f4f; text-decoration: underline; }
+      #consent-box button {
+        margin-top: 20px;
+        padding: 10px 22px;
+        background: #6b4f4f;
+        color: #fff;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+      #consent-box button:hover { background: #845829; }
+    `;
+    document.head.appendChild(style);
 
-// --- CLIENT CODE ---
-const token = await getUserToken(); // Get the token from your server
-window.chatbase('identify', { token }); // identify the user with Chatbase
-}
+    // Button handler
+    document.getElementById("agree-btn").addEventListener("click", () => {
+      localStorage.setItem("beans4u_terms_agreed", "true");
+      overlay.remove();
+    });
+  }
+});
+localStorage.clear();
