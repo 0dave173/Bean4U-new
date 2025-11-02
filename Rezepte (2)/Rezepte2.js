@@ -36,7 +36,7 @@ const coffeeImages = {
   "Iced Coffee": "../imgs/Rezepteimgs/iced-coffee.webp",
   "Mazagran": "../imgs/Rezepteimgs/mazagran.webp",
   "Coffee Milk": "../imgs/Rezepteimgs/milk-coffee.webp",
-  "Cafe au Lait": "https://images.unsplash.com/photo-1563390323222-b0593bfc85c3?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGNhZmUlMjBhdSUyMGxhaXR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=500",
+  "Cafe au Lait": "../imgs/Rezepteimgs/cafe-au-lait.webp",
   "Breve": "https://images.unsplash.com/photo-1734120284108-e5e0ecdb738b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8QnJldmUlMjBjb2ZmZWV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=500",
   "Chicory Coffee": "https://media.istockphoto.com/id/636355052/de/foto/chicory-getr%C3%A4nk.jpg?b=1&s=612x612&w=0&k=20&c=jkbPREJmcZ2Qf846tod3ASjKdsho1miHvSXf3eVaxZY=",
   "Drip Coffee": "https://images.pexels.com/photos/21572307/pexels-photo-21572307.jpeg",
