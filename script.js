@@ -103,7 +103,7 @@ window.addEventListener("DOMContentLoaded", () => {
     overlay.id = "consent-overlay";
     overlay.innerHTML = `
       <div id="consent-box">
-        <h2>Welcome to Beans4U ☕</h2>
+        <h2>Welcome to Bean4U ☕</h2>
         <p>
           Please review and accept our
           <a href="/terms.html" target="_blank">Terms & Conditions</a> and
