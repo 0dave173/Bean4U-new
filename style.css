@@ -14,7 +14,7 @@ body{font-family:monospace;color:#d1d1d1;min-height:100vh;overflow-x:hidden}
 .bg-cover{position:fixed;inset:0;background:url('imgs/mcw2.png') center/cover no-repeat;z-index:-1}
 
 /* Überschrift */
-.headline{text-align:center;font-size:clamp(60px,180px,120px);font-weight:700;margin:40px 0 40px;color:#fff}
+.headline{text-align:center;font-size:clamp(15vh,20vh,30vw);font-weight:700;margin:40px 0 40px;color:#fff}
 
 /* Glasige Menü-Leiste */
 .menu-container{
