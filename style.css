@@ -266,7 +266,7 @@ font-family: 'Courier New';
         padding: 6px 10px;
     }
     .headline {
-        font-size: clamp(2rem, 9vw, 4rem);
+        font-size: clamp(10vh, 19vh, 40vh);
     }
 
     /* Bubble adjusts to tiny buttons */
