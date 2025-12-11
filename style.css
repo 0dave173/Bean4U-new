@@ -210,3 +210,68 @@ font-family: 'Courier New';
   .buy-coffee-btn::after{animation:none; opacity:.5}
 
 }
+
+/* ==========================================
+   GLOBAL RESPONSIVENESS IMPROVEMENTS
+   ========================================== */
+
+/* Scale headline on all devices */
+.headline {
+    font-size: clamp(3rem, 10vw, 10rem);
+    margin-top: 3vh;
+}
+
+/* Tablet adjustments */
+@media (max-width: 900px) {
+    .menu-container {
+        width: 92vw;
+        padding: 20px 26px;
+        border-radius: 32px;
+    }
+    .menu-list {
+        gap: 32px;
+    }
+    .menu-list a {
+        font-size: 1.2rem;
+        padding: 8px 14px;
+    }
+}
+
+/* Large Phones */
+@media (max-width: 640px) {
+    .menu-container {
+        width: 94vw;
+        padding: 18px 22px;
+    }
+    .menu-list a {
+        font-size: 1.1rem;
+    }
+    .menu-bubble {
+        height: 42px !important;
+    }
+}
+
+/* Small Phones (iPhone SE, Galaxy Mini, etc.) */
+@media (max-width: 420px) {
+    .menu-container {
+        width: 96vw;
+        padding: 15px 18px;
+        border-radius: 26px;
+    }
+    .menu-list {
+        gap: 18px;
+    }
+    .menu-list a {
+        font-size: 1rem;
+        padding: 6px 10px;
+    }
+    .headline {
+        font-size: clamp(2rem, 9vw, 4rem);
+    }
+
+    /* Bubble adjusts to tiny buttons */
+    .menu-bubble {
+        border-radius: 22px;
+        height: 36px !important;
+    }
+}

@@ -56,10 +56,10 @@ function focusLink(link){
   const rN = nav.getBoundingClientRect();
 
   target = {
-    x:rL.left - rN.left - 12,
-    y:rL.top  - rN.top  - 6,
-    w:rL.width + 24,
-    h:rL.height+ 12
+      x: rL.left - rN.left - 8,
+      y: rL.top  - rN.top  - 4,
+      w: rL.width + 16,
+      h: rL.height + 10
   };
 
   const li          = link.parentElement;
