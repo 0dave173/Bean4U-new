@@ -14,11 +14,11 @@ body{font-family:monospace;color:#d1d1d1;min-height:100vh;overflow-x:hidden}
 .bg-cover{position:fixed;inset:0;background:url('imgs/mcw2.png') center/cover no-repeat;z-index:-1}
 
 /* Überschrift */
-.headline{text-align:center;font-size:clamp(15vh,20vh,30vw);font-weight:700;margin:40px 0 40px;color:#fff}
+.headline{text-align:center;font-size:clamp(13vh,18vh,25vh);font-weight:700;margin:15px 0 px;color:#fff}
 
 /* Glasige Menü-Leiste */
 .menu-container{
-  width:min(95vw,960px);
+  width:min(85vw,960px);
   margin:0 auto;
   padding:24px 32px;
   border-radius:36px;
@@ -95,9 +95,9 @@ body{font-family:monospace;color:#d1d1d1;min-height:100vh;overflow-x:hidden}
 
 .slogan{
 text-align:center;
-font-size:clamp(25px,50px,100px);
+font-size:clamp(3vh,7vh,15vh);
 font-weight:700;
-margin:0px 0 50px;
+margin:0px 0 25px;
 color:#856a54;
 font-family: 'Courier New';
 }
@@ -118,6 +118,8 @@ font-family: 'Courier New';
   text-decoration:none;
   font-weight:700;
   letter-spacing:.3px;
+    width: min-content;
+    height: min-content;
 
   /* Glasig + kräftiger Kaffee-Farbakzent */
   background:
